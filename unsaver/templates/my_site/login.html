@@ -4,6 +4,9 @@
         <script></script>
     </head>
     <body>
-        <a href="{{ auth_url }}">Click here!</a> 
+        {% csrf_token %}
+        <button>
+            <a href="{{ auth_url }}">Click here!</a> 
+        </button>
     </body>
 </html>
