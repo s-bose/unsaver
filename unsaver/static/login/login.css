@@ -1,0 +1,41 @@
+
+:root {
+    --input-padding-x: 1.5rem;
+    --input-padding-y: 0.75rem;
+  }
+  
+  .jumbotron {
+    background: none;
+  }
+
+  .login,
+  .image {
+    min-height: 100vh;
+  }
+  
+  .bg-image {
+    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .btn-container {
+    text-align: center;
+    padding: 10%;
+  }
+  
+  .btn-white {
+    background-color: #fff;
+    color: black;
+    border-radius: 2em;
+    font-size: medium;
+    text-decoration: none;
+  }
+  
+  .btn-white:hover {
+    background-color: #f83d19;
+  }
+
+  i {
+    margin-right: 0.2em;
+  }
