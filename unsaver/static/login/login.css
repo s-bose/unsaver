@@ -3,7 +3,20 @@
     --input-padding-x: 1.5rem;
     --input-padding-y: 0.75rem;
   }
-  
+
+  .swipe-container {
+    text-align: center;
+  }
+
+
+
+  .card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
   .jumbotron {
     background: none;
   }
@@ -17,6 +30,7 @@
     background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
     background-size: cover;
     background-position: center;
+    position: relative; 
   }
   
   .btn-container {

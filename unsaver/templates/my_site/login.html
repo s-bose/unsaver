@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
         integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
     <link rel="stylesheet" href="{% static 'login/login.css' %}">
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
     <script src="https://kit.fontawesome.com/96250b37a0.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="container-fluid">
         <div class="row no-gutter">
-          <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
+          <div class="d-none d-md-flex align-items-center col-md-4 col-lg-6 bg-image">
+            <div class="card">
+              hello world
+            </div>
+          </div>
           <div class="col-md-8 col-lg-6">
             <div class="login d-flex align-items-center py-5">
               <div class="container">
@@ -26,7 +29,8 @@
                         <hr class="my-4">
                         <p>Unsaver for Reddit uses Tinder-like swipe cards to help you browse through your saved posts easily</p>
                         <div class="btn-container">
-                            <a class="btn btn-secondary btn-lg btn-white btn-block" href="{{ auth_url }}" role="button"><i class="fab fa-reddit fa-2x fa-fw" style="vertical-align: middle;"></i>
+                            <a class="btn btn-secondary btn-lg btn-white btn-block" href="{{ auth_url }}" role="button">
+                              <i class="fab fa-reddit fa-2x fa-fw" style="vertical-align: middle;"></i>
                                 <span>Login to Reddit</span></a>
                         </div>
                       </div>
