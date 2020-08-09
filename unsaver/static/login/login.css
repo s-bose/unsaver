@@ -4,18 +4,47 @@
     --input-padding-y: 0.75rem;
   }
 
-  .swipe-container {
-    text-align: center;
+
+  .bg-image {
+    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
+    background-size: cover;
+    background-position: center;
+    position: relative; 
   }
 
-
-
   .card {
+    height: auto;
+    width: 50%;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    padding: 20vh 10vw 20vh 10vw;
+    border: 0;
+    margin: 0;
+    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.75);
+    border-radius: 1.55em;
+    background-image: 
+    radial-gradient( circle 20px at 20% 30%, grey 50%, transparent 0 ),
+    linear-gradient(45deg, #aaa,#fff);
+
   }
+
+  .cover{
+    display: inline-block;
+    height: 1em;
+    width: 8ch;
+    /* background-color: black; */
+    /* z-index: 1; */
+  }
+
+  /* .card-heading {
+    height: 1rem;
+    width: 50%;
+    margin: 5px;
+    border-radius: 3px;
+    color: black;
+  } */
 
   .jumbotron {
     background: none;
@@ -26,12 +55,7 @@
     min-height: 100vh;
   }
   
-  .bg-image {
-    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
-    background-size: cover;
-    background-position: center;
-    position: relative; 
-  }
+ 
   
   .btn-container {
     text-align: center;
