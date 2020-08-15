@@ -6,6 +6,8 @@
 
 
   .bg-image {
+    background-image: url('/static/login/reddit_snoo.jpg');
+    background-size: fill;
     position: relative; 
     overflow: hidden;
   }
@@ -20,8 +22,8 @@
     box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.75);
     border-radius: 1.55em;
     border: 0;
-    background-image: 
-    linear-gradient(45deg, #c33764,#1d2671);
+    background: linear-gradient(-45deg, #ee0979, #fc4a1a, #2c3e50, #23d5ab);
+    background-size: 500% 500%;
     /* transform: rotate(45deg); */
     /* transform-origin: 50% ; */
     animation: swipe 3s ease-in-out forwards infinite;
@@ -30,16 +32,19 @@
 
   @keyframes swipe {
     0% {
-      transform: rotate(10deg);
+      transform: rotate(12deg);
       left: 6em;
+      background-position: 0% 50%;
     }
     50% {
-      transform: rotate(-5deg);
+      transform: rotate(-6deg);
       left: -3em;
+      background-position: 100% 50%;
     }
     100% {
-      transform: rotate(10deg);
+      transform: rotate(12deg);
       left: 6em;
+      background-position: 0% 50%;
     }
   }
 
