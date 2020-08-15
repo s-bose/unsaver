@@ -7,7 +7,8 @@
 
   .bg-image {
     background-image: url('/static/login/reddit_snoo.jpg');
-    background-size: fill;
+    background-size: cover;
+    background-position: 20%;
     position: relative; 
     overflow: hidden;
   }
@@ -107,14 +108,13 @@
 
   .jumbotron {
     background: none;
+    text-overflow: ellipsis;
   }
 
   .login,
   .image {
     min-height: 100vh;
   }
-  
- 
   
   .btn-container {
     text-align: center;
@@ -127,6 +127,13 @@
     border-radius: 2em;
     font-size: medium;
     text-decoration: none;
+  }
+
+  @media (max-width: 1065px) {
+    .login {
+      font-size: small;
+    }
+    .btn-white {font-size: small;}
   }
   
   .btn-white:hover {
