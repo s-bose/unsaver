@@ -6,24 +6,83 @@
 
 
   .bg-image {
-    background-image: url('https://source.unsplash.com/WEQbe2jBg40/600x1200');
-    background-size: cover;
-    background-position: center;
     position: relative; 
+    overflow: hidden;
   }
+  
 
   .card {
     position: relative;
+    display: inline-block;
     height: 500px;
     width: 400px;
     top: 25vh;
     box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.75);
     border-radius: 1.55em;
+    border: 0;
     background-image: 
-    radial-gradient( circle 20px at 20% 30%, grey 50%, transparent 0 ),
-    linear-gradient(45deg, #aaa,#fff);
-
+    linear-gradient(45deg, #c33764,#1d2671);
+    /* transform: rotate(45deg); */
+    /* transform-origin: 50% ; */
+    animation: swipe 3s ease-in-out forwards infinite;
   }
+
+
+  @keyframes swipe {
+    0% {
+      transform: rotate(10deg);
+      left: 6em;
+    }
+    50% {
+      transform: rotate(-5deg);
+      left: -3em;
+    }
+    100% {
+      transform: rotate(10deg);
+      left: 6em;
+    }
+  }
+
+  
+
+ .image-skeleton {
+    position: relative;
+    display: inline-block!important;
+    height: 50%;
+    width: 95%;
+    border-radius: 1.3em;
+    left: 2.5%;
+    top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75); 
+  }
+
+  .avatar-skeleton {
+    position: relative;
+    display: inline-block!important;
+    height: 6.5%;
+    width: 8%;
+    border-radius: 5em;
+    top: 2em;
+    left: 2.5%;
+    margin-top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.75);
+  }
+
+  .text-skeleton {
+    position: relative;
+    display: inline-block!important;
+    height: 5%;
+    width: 94%;
+    border-radius: 1.2em;
+    top: 2em;
+    left: 2.5%;
+    margin-top: 0.5em;
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: -0px 2px 5px rgba(0, 0, 0, 0.75); 
+  }
+
 
   .cover{
     display: inline-block;
