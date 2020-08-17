@@ -18,7 +18,7 @@
   
 
   .card {
-    position: relative;
+    position: fixed;
     display: flex;
     height: 500px;
     width: 400px;
@@ -28,24 +28,10 @@
     border: 0;
     background: linear-gradient(-45deg, #ee0979, #fc4a1a, #2c3e50, #23d5ab);
     background-size: 500% 500%;
-    /* transform: rotate(45deg); */
-    /* transform-origin: 50% ; */
-    animation: swipe 3s ease-in-out forwards infinite;
   }
-  .card2 {
-    position: fixed;
-    display: flex;
-    height: 500px;
-    width: 400px;
-    box-shadow: -10px 5px 10px rgba(0, 0, 0, 0.75);
-    border-radius: 1.55em;
-    border: 0;
-    background:linear-gradient(90deg, #42275a 0%,#734b6d 100% );
-    background-size: 500% 500%;
-    /* transform: rotate(45deg); */
-    /* transform-origin: 50% ; */
-    /* animation: swipe 3s ease-in-out forwards infinite; */
-    top: 27vh;
+  .animation {
+    position: relative;
+    animation: swipe 3s ease-in-out forwards infinite;
   }
 
 

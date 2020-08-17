@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <HelloWorld/>
+    <Login/>
   </div>  
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from './components/login.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Login,
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Quicksand';
-}
-
 </style>
